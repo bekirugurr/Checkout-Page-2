@@ -10,77 +10,86 @@
   <body>
     <h1>Checkout</h1>
     <main>
-      <div class="product product-1">
-        <div><img src="./img/photo1.png" alt="bag" /></div>
-        <div>
-          <h2>Vintage Backbag</h2>
-          <div>
-           <p class="current-price-wrapper">$<span id="price-product-1" class="current-price">25.98</span></p>
-            <span class="old-price">$34.99</span>
+      <div id="products">
+        <div class="product product-1">
+          <div><img src="./img/photo1.png" alt="bag" /></div>
+          <div class="info">
+            <h2>Vintage Backbag</h2>
+            <div>
+              <span class="current-price-wrapper"
+                >$<span id="price-product-1" class="current-price"
+                  >25.98</span
+                ></span
+              >
+              <span class="old-price">$34.99</span>
+            </div>
+            <div class="quantity-wrapper">
+              <div class="minus">-</div>
+              <span class="quantity">1</span>
+              <div class="plus">+</div>
+            </div>
+            <button class="remove">Remove</button>
+
+            <p>Product Total: $<span class="product-total">25.98</span></p>
           </div>
-          <div class="count-wrapper">
-            <div class="minus">-</div>
-            <p class="count"></p>
-            <div class="plus">+</div>
+        </div>
+        <div class="product product-2">
+          <div><img src="./img/photo2.png" alt="shoes" /></div>
+          <div class="info">
+            <h2>Levi Shoes</h2>
+            <div>
+              <span class="current-price-wrapper">
+                $<span id="price-product-2" class="current-price">45.99</span>
+              </span>
+              <span class="old-price">$54.99</span>
+            </div>
+            <div class="quantity-wrapper">
+              <div class="minus">-</div>
+              <span class="quantity">1</span>
+              <div class="plus">+</div>
+            </div>
+            <button class="remove">Remove</button>
+            <p>Product Total: $<span class="product-total">45.99</span></p>
           </div>
-          <button>Remove</button>
-          <p>Product Total: $<span class="price-for-count"></span></p>
+        </div>
+        <div class="product product-3">
+          <div><img src="./img/photo3.jpg" alt="clock" /></div>
+          <div class="info">
+            <h2>Antique Clock</h2>
+            <div>
+              <span class="current-price-wrapper">
+                $<span id="price-product-3" class="current-price">74.99</span>
+              </span>
+              <span class="old-price">$94.99</span>
+            </div>
+            <div class="quantity-wrapper">
+              <div class="minus">-</div>
+              <span class="quantity">1</span>
+              <div class="plus">+</div>
+            </div>
+            <button class="remove">Remove</button>
+            <p>Product Total: $<span class="product-total">74.99</span></p>
+          </div>
         </div>
       </div>
-      <div class="product product-2">
-        <div><img src="./img/photo2.png" alt="shoes" /></div>
-        <div>
-          <h2>Levi Shoes</h2>
-          <div>
-            <p class="current-price-wrapper">$<span id="price-product-2" class="current-price">45.99</span></p>
-            <span class="old-price">$54.99</span>
-          </div>
-          <div class="count-wrapper">
-            <div class="minus">-</div>
-            <p class="count"></p>
-            <div class="plus">+</div>
-          </div>
-          <button>Remove</button>
-          <p>Product Total: $<span class="price-for-count"></span></p>
+      <section>
+        <div class="section__pricess">
+          <p>Subtotal</p>
+          <p>$<span id="subtotal-price">0</span></p>
         </div>
-      </div>
-      </div>
-      <div class="product product-3">
-        <div><img src="./img/photo9.png" alt="clock" /></div>
-        <div>
-          <h2>Antique Clock</h2>
-          <div>
-            <p class="current-price-wrapper">$<span id="price-product-3" class="current-price">74.99</span></p>
-            <span class="old-price">$94.99</span>
-          </div>
-          <div class="count-wrapper">
-            <div class="minus">-</div>
-            <p class="count"></p>
-            <div class="plus">+</div>
-          </div>
-          <button>Remove</button>
-          <p>Product Total: $<span class="price-for-count"></span></p>
+        <div class="section__pricess">
+          <p>Tax(18%)</p>
+          <p>$<span id="tax">0</span></p>
         </div>
-        <section>
-            <div class="section__pricess">
-                <p>Subtotal</p>
-                <p> <span  id="suptotal-price"></span></p>
-            </div>
-            <div class="section__pricess">
-                <p>Tax(18%)</p>
-                <p> <span  id="tax"></span></p>
-            </div>
-            <div class="section__pricess">
-                <p>Shipping</p>
-                <p> <span  id="shipping-price"></span></p>
-            </div>
-            <div class="section__pricess">
-                <p>Total</p>
-               <p> <span  id="total-price"></span></p>
-            </div>
-        </section>
-      </div>
-      </div>
+        <div class="section__pricess">
+          <p>Shipping</p>
+          <p>$<span id="shipping-price">0</span></p>
+        </div>
+        <div class="section__pricess">
+          <p>Total</p>
+          <p>$<span id="total-price">0</span></p>
+        </div>
+      </section>
     </main>
 
     <script src="app.js"></script>
