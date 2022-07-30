@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
 
 //! Capturings
 
-let productsDiv = document.querySelector("#products");
+let productsDiv = document.querySelector("#products"); 
 
 productsDiv.addEventListener("click", (e) => {
   let quantityP =
